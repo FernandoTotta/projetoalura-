@@ -24,6 +24,7 @@
 		C144CF5025DB499200991897 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C144CF5325DB499200991897 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C144CF5525DB499200991897 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1D0966525DF271800D2619B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 				C144CF4B25DB498C00991897 /* ViewController.swift */,
 				C144CF4D25DB498C00991897 /* Main.storyboard */,
 				C144CF5025DB499200991897 /* Assets.xcassets */,
+				C1D0966525DF271800D2619B /* MyPlayground.playground */,
 				C144CF5225DB499200991897 /* LaunchScreen.storyboard */,
 				C144CF5525DB499200991897 /* Info.plist */,
 			);
