@@ -49,19 +49,78 @@ import UIKit
 //    print(caloria)
 //}
 
-let totalDeCalorias = [50.5,100]
+//let totalDeCalorias = [50.5,100]
+//
+//func todasCalorias(totalDeCalorias:[Double]) ->Double{
+//    var total: Double = 0
+//
+//
+//    for caloria in totalDeCalorias {
+//        total += caloria
+//    }
+//    return total
+//}
+//let total = todasCalorias(totalDeCalorias: [50.5,100,400])
+//
+//print(total)
 
-func todasCalorias(totalDeCalorias:[Double]) ->Double{
-    var total: Double = 0
-    
-    
-    for caloria in totalDeCalorias {
-        total += caloria
-    }
-    return total
+
+//criar primeira refeicao
+
+let nome : String = "macarrao"
+let felicidade : String = "5"
+
+//criar segunda refeicao
+
+let nome2 : String = "Churros"
+let felicidade2 : String = "4"
+
+//------------------------------
+
+// criar uma classe que agrupe essas caracteristicas :
+
+class Refeicao {
+    var nome : String?
+    var felicidade : String?
 }
-let total = todasCalorias(totalDeCalorias: [50.5,100,400])
 
-print(total)
+// Instanciando uma classe :
+
+let refeicao = Refeicao()
+refeicao.nome = "macarrao"
+
+// Cuidado => forced unwrap
+if refeicao.nome != nil {
+print(refeicao.nome!)
+}
 
 
+
+//Boas praticas para extrair valores opcionais:
+
+if let nome = refeicao.nome {
+    print(nome)
+    
+}
+
+// guard let
+
+func exibeNomeDaRefeicao() {
+    if let nome = refeicao.nome {
+        print(nome)
+    }
+    
+    guard let nome = refeicao.nome else {
+        return
+    }
+}
+exibeNomeDaRefeicao()
+
+
+let numero = Int("5")
+
+if let n = numero {
+    print(n)
+} else {
+    print("erro ao converter string para int")
+}
